@@ -1,14 +1,16 @@
 #!/usr/bin/python3
-"""Defines class square"""
+"""
+module Defines class square
+"""
 
 
 class Square():
-    """Class square"""
+    """ Class square """
     width = 0
     height = 0
 
     def __init__(self, *args, **kwargs):
-        """init method"""
+        """ Init method """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -25,7 +27,7 @@ class Square():
         return "{}/{}".format(self.width, self.height)
 
 if __name__ == "__main__":
-    """check if main"""
+    """ Check if main the name """
     s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
