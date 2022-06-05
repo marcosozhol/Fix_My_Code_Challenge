@@ -21,8 +21,8 @@ class User():
     def email(self):
         """ property email """
         return self.__email
-   
-    
+
+
 if __name__ == "__main__":
     """ define name as main """
     u = User()
