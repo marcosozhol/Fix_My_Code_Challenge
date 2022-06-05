@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-module Defines class square
+module that defines class Square
 """
 
 
@@ -25,6 +25,7 @@ class Square():
     def __str__(self):
         """ Str representation """
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
     """ Check if main the name """
