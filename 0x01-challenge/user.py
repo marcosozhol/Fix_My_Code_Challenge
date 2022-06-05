@@ -10,7 +10,7 @@ class User():
     def __init__(self):
         """ Init method """
         self.__email = None
-        
+
     @property
     def email(self):
         """ property email """
