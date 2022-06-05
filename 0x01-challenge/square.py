@@ -5,12 +5,12 @@ module that defines class Square
 
 
 class Square():
-    """ Class square """
+    """ class square """
     width = 0
     height = 0
 
     def __init__(self, *args, **kwargs):
-        """ Init method """
+        """ init method """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -18,18 +18,18 @@ class Square():
         """ Area of the square """
         return self.height * self.width
 
-    def perimeter_of_my_square(self):
-        """ Perimeter of square """
+    def permiter_of_my_square(self):
+        """ perimeter of square """
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
-        """ Str representation """
+        """ string representation"""
         return "{}/{}".format(self.width, self.height)
 
 
 if __name__ == "__main__":
-    """ Check if main the name """
+    """ checks if __name__ == '__main__'"""
     s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
-    print(s.perimeter_of_my_square())
+    print(s.permiter_of_my_square())
